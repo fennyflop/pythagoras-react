@@ -1,0 +1,33 @@
+.header{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    background-color: rgb(36,36,36);
+    min-width: 288px;
+    margin-right:  auto;
+    margin-left: auto;
+    padding-top: 28px;
+}
+.header__links {
+    display: flex;
+    padding: 0;
+}
+.header__li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 30px 0 0;
+}
+.header__link {
+    list-style-type: none;
+    padding: 0;
+    color: white;
+    font-size: 30px;
+    border-bottom: 3px solid rgb(70,70,70);
+    text-decoration: none;
+}
+.header__link-active {
+    border-bottom: 3px solid white;
+}
+.header__link:last-of-type {
+    margin-right: 0;
+}
