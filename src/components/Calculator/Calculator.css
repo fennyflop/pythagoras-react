@@ -48,12 +48,17 @@
 .calculator__name:hover {
     cursor: pointer;
 }
+.canvas {
+    display: flex;
+    /* overflow: hidden; */
+    justify-content: flex-end;
+}
 .calculator__canvas {
     /* position: absolute; */
-    width: fit-content;
-    height: fit-content;
-    margin-top: 20px;
-    /* transform: rotate(90deg); */
+    width: 400px;
+    height: 400px;  
+    transform: rotate(90deg);
+    margin-bottom: -80px;
 }
 .calculator__canvas-none {
     display: none;

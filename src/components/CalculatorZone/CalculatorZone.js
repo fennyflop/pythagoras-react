@@ -36,7 +36,7 @@ function CalculatorZone({ title }) {
             <SuccessMessage message="Ваш треугольник был проверен напиши тестами!" isHidden={!(Number(k1) ** 2 + Number(k2) ** 2 == Number(gyp) ** 2 && Number(k1) != '' && Number(k2) != '' && Number(gyp) != '')} />
             <ErrorMessage message="Ваш треугольник не подходит" isHidden={!(Number(k1) ** 2 + Number(k2) ** 2 == Number(gyp) ** 2) || Number(k1) == '' || Number(k2) == '' || Number(gyp) == ''} />
             <div className="canvas">
-                <Canvas k1={k1} k2={k2} gyp={gyp} ishidden={!(Number(k1) ** 2 + Number(k2) ** 2 == Number(gyp) ** 2 && Number(k1) != '' && Number(k2) != '' && Number(gyp) != '')} />
+                <Canvas width="400" height="400" k1={k1} k2={k2} gyp={gyp} ishidden={!(Number(k1) ** 2 + Number(k2) ** 2 == Number(gyp) ** 2 && Number(k1) != '' && Number(k2) != '' && Number(gyp) != '')} />
             </div>
         </div>
     );
