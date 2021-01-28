@@ -1,0 +1,32 @@
+.canvas {
+    display: flex;
+    position: relative;
+    justify-content: flex-end;
+}
+.canvas-none {
+    display: none;
+}
+.calculator__canvas {
+    /* position: absolute; */
+    width: 400px;
+    height: 400px;  
+    transform: rotate(90deg);
+    margin-bottom: -80px;
+}
+.canvas__value {
+    color: white;
+    position: absolute;
+}
+.k1 {
+    bottom: -20px;
+    right: 50%;
+}
+.k2 {
+    top: 50%;
+    transform: translate(0, 50%);
+}
+.gyp {
+    left: 0;
+    top: 50%;
+    transform: translate(0, 50%);
+}

@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import './Canvas.css';
 
 function Canvas(props) {
     const { k1, k2, gyp } = props;
@@ -15,7 +16,6 @@ function Canvas(props) {
             Math.round(k2 / sum * 100),
             Math.round(gyp / sum * 100)
         ];
-        console.log(values);
         context.clearRect(0, 0, canvas.width, canvas.height);
         context.fillStyle = 'white';
         context.beginPath();
@@ -33,7 +33,7 @@ function Canvas(props) {
         context.fill();
     }, [k1, k2, gyp])
 
-    return <canvas className={`calculator__canvas ${props.ishidden ? 'calculator__canvas-none' : ''}`} ref={canvasRef} {...props} />
+    return <canvas className='calculator__canvas' ref={canvasRef} {...props} />
 };
 
 export default Canvas;
