@@ -1,5 +1,4 @@
 import './List.css';
-import Algorithm from '../Algorithm/Algorithm';
 import Card from '../Card/Card';
 
 function List({ array }) {
