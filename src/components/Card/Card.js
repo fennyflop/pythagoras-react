@@ -10,7 +10,7 @@ function Card({ counter, p, q, k1, k2, gyp, viewable }) {
     return (
         <section className="card">
             <header className="card__header">
-                <p className="card__num">{counter}</p>
+                <p className="card__num">{counter}.</p>
                 <p className="card__num">{p || 1}</p>
                 <p className="card__num">{q || 1}</p>
                 <p className="card__num">{k1 || 1}</p>

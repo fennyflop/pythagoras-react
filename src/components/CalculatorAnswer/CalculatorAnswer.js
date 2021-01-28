@@ -1,6 +1,6 @@
 import './CalculatorAnswer.css';
 import Algorithm from '../Algorithm/Algorithm';
-import Result from '../Result/Result';
+import Card from '../Card/Card';
 import { useState, useEffect } from 'react';
 
 function CalculatorAnswer({ x1, x2, opened }) {
@@ -61,8 +61,9 @@ function CalculatorAnswer({ x1, x2, opened }) {
     }, [opened]);
 
     return (
-        <div className="result">
-            <Result answer={answer} />
+        <div className={`calculator__answer ${opened ? '' : 'calculator__answer-hidden'}`}>
+            <Card counter={'№'} p={'P'} q={"Q"} k1={'K1'} k2={'K2'} gyp={'GYP'} viewable={false} />
+            <Card counter={answer.counter} p={answer.p} q={answer.q} k1={answer.k1} k2={answer.k2} gyp={answer.gyp} viewable={true} />
         </div>
     );
 };

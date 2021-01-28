@@ -19,9 +19,12 @@ function Calculator() {
     }
 
     function handleSubmit() {
-        setOpened(!opened);
-        console.log(!opened);
+        setOpened(true);
     }
+
+    useEffect(() => {
+        setOpened(false);
+    }, [triangle1, triangle2])
 
     useEffect(() => {
         if (triangle1.isValid && triangle2.isValid) {
@@ -35,7 +38,7 @@ function Calculator() {
         <section className="calculator">
             <div className="calculator__interface">
                 <CalculatorZone onTriangleChange={onTriangle1Change} title="Первый треугольник" />
-                <button className="calculator__add" disabled={!isValid} onClick={handleSubmit} >Прибавить через виета</button>
+                <button type="submit" className="calculator__add" disabled={!isValid} onClick={handleSubmit} >Прибавить через виета</button>
                 <CalculatorZone onTriangleChange={onTriangle2Change} title="Второй треугольник" />
             </div>
             <CalculatorAnswer x1={triangle1} x2={triangle2} opened={opened} />
