@@ -27,6 +27,7 @@ function CalculatorZone({ title, onTriangleChange }) {
             k1: +k1,
             k2: +k2,
             gyp: +gyp,
+            isValid: (Number(k1) ** 2 + Number(k2) ** 2 == Number(gyp) ** 2 && Number(k1) != '' && Number(k2) != '' && Number(gyp) != ''),
         })
     }, [k1, k2, gyp])
 

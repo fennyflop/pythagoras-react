@@ -1,0 +1,7 @@
+.result {
+    width: 100%;
+    background-color: rgb(70,70,70);
+    margin-top: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+}

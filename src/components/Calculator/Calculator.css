@@ -39,12 +39,21 @@
     width: 100px;
     color: white;
 }
-.calculator__name {
+.calculator__add {
+    background-color: transparent;
     color: white;
-    margin: auto 0;
-    max-width: 100px;
-    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+    opacity: 1;
 }
-.calculator__name:hover {
+.calculator__add:disabled {
+    text-decoration: line-through;
+    opacity: .8;
+}
+.calculator__add:hover {
     cursor: pointer;
 }
