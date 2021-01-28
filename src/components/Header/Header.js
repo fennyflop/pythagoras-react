@@ -12,7 +12,7 @@ function Header() {
                     <NavLink to="/calculator" className="header__link" activeClassName="header__link-active">Калькулятор</NavLink>
                 </li>
                 <li className="header__li">
-                    <NavLink to="/table" className="header__link" activeClassName="header__link-active">Таблица</NavLink>
+                    <NavLink to="/list" className="header__link" activeClassName="header__link-active">Таблица</NavLink>
                 </li>
                 <li className="header__li">
                     <NavLink to="/blog" className="header__link" activeClassName="header__link-active">Блог</NavLink>

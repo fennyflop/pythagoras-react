@@ -1,11 +1,13 @@
 import './App.css';
+import Algorithm from '../Algorithm/Algorithm';
 import List from '../List/List';
-import AddList from '../AddList/AddList';
 import Header from '../Header/Header';
 import Calculator from '../Calculator/Calculator';
 import { Route, Switch } from 'react-router-dom';
 
 function App() {
+  const algorithm = new Algorithm(100000);
+  const array = algorithm.renderArray();
   return (
     <>
       <Header />
@@ -14,11 +16,11 @@ function App() {
           <Route exact path="/">
             <h1>Hello</h1>
           </Route>
-          <Route path="/table">
-            <List />
+          <Route path="/list">
+            <List array={array} />
           </Route>
           <Route path="/calculator">
-            <Calculator />
+            <Calculator array={array} />
           </Route>
         </Switch>
       </main>

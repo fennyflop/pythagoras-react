@@ -1,18 +1,11 @@
 import './CalculatorAnswer.css';
-import Algorithm from '../Algorithm/Algorithm';
+import NotFoundCard from '../NotFoundCard/NotFoundCard';
 import Card from '../Card/Card';
 import { useState, useEffect } from 'react';
 
-function CalculatorAnswer({ x1, x2, opened }) {
+function CalculatorAnswer({ x1, x2, opened, array }) {
 
-    const [answer, setAnswer] = useState({
-        k1: 2,
-        k2: 2,
-        gyp: 2,
-    });
-
-    const algorithm = new Algorithm(30000);
-    const array = algorithm.renderArray();
+    const [answer, setAnswer] = useState(false);
 
     let possibleAnswers = [];
 
@@ -50,21 +43,24 @@ function CalculatorAnswer({ x1, x2, opened }) {
             possibleAnswers.push(ans);
         })();
         possibleAnswers.forEach(({ k1, k2, gyp }) => {
-            const triangle = array.find((e) => {
-                return e.gyp === gyp && e.k1 === k1 && e.k2 === k2;
-            });
-            if (triangle) {
-                setAnswer(triangle);
-                console.log(triangle);
-            };
+            if (gyp > 100000) {
+                setAnswer(false);
+            } else {
+                const triangle = array.find((e) => {
+                    return e.gyp == gyp && e.k1 == k1 && e.k2 == k2;
+                });
+                if (triangle) {
+                    setAnswer(triangle);
+                };
+            }
         });
     }, [opened]);
 
     return (
         <div className={`calculator__answer ${opened ? '' : 'calculator__answer-hidden'}`}>
             <Card counter={'№'} p={'P'} q={"Q"} k1={'K1'} k2={'K2'} gyp={'GYP'} viewable={false} />
-            <Card counter={answer.counter} p={answer.p} q={answer.q} k1={answer.k1} k2={answer.k2} gyp={answer.gyp} viewable={true} />
-        </div>
+            {!answer ? <NotFoundCard /> : <Card counter={answer.counter} p={answer.p} q={answer.q} k1={answer.k1} k2={answer.k2} gyp={answer.gyp} viewable={true} />}
+        </div >
     );
 };
 

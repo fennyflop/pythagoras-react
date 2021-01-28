@@ -2,12 +2,7 @@ import './List.css';
 import Algorithm from '../Algorithm/Algorithm';
 import Card from '../Card/Card';
 
-function List() {
-
-    const algorithm = new Algorithm(30000);
-
-    const array = algorithm.renderArray();
-
+function List({ array }) {
     return (
         <section className="list">
             <Card counter="№" p="P" q="Q" k1="K1" k2="K2" gyp="GYP" viewable={false} />

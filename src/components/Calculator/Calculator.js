@@ -3,7 +3,7 @@ import CalculatorZone from '../CalculatorZone/CalculatorZone';
 import CalculatorAnswer from '../CalculatorAnswer/CalculatorAnswer';
 import { useState, useEffect } from 'react';
 
-function Calculator() {
+function Calculator({ array }) {
 
     const [triangle1, setTriangle1] = useState({});
     const [triangle2, setTriangle2] = useState({});
@@ -41,7 +41,7 @@ function Calculator() {
                 <button type="submit" className="calculator__add" disabled={!isValid} onClick={handleSubmit} >Прибавить через виета</button>
                 <CalculatorZone onTriangleChange={onTriangle2Change} title="Второй треугольник" />
             </div>
-            <CalculatorAnswer x1={triangle1} x2={triangle2} opened={opened} />
+            <CalculatorAnswer array={array} x1={triangle1} x2={triangle2} opened={opened} />
         </section>
     );
 };
