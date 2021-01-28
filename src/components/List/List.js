@@ -1,5 +1,7 @@
 import './List.css';
 import Card from '../Card/Card';
+import Algorithm from '../Algorithm/Algorithm';
+import { useState } from 'react';
 
 function List({ array }) {
     return (
