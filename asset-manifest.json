@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/fennyflop/pythagoras-react/static/css/main.6cae98e8.chunk.css",
+    "main.js": "/fennyflop/pythagoras-react/static/js/main.ddd5ec61.chunk.js",
+    "main.js.map": "/fennyflop/pythagoras-react/static/js/main.ddd5ec61.chunk.js.map",
+    "runtime-main.js": "/fennyflop/pythagoras-react/static/js/runtime-main.bc556f27.js",
+    "runtime-main.js.map": "/fennyflop/pythagoras-react/static/js/runtime-main.bc556f27.js.map",
+    "static/js/2.5ce113d4.chunk.js": "/fennyflop/pythagoras-react/static/js/2.5ce113d4.chunk.js",
+    "static/js/2.5ce113d4.chunk.js.map": "/fennyflop/pythagoras-react/static/js/2.5ce113d4.chunk.js.map",
+    "static/css/3.47a2f80b.chunk.css": "/fennyflop/pythagoras-react/static/css/3.47a2f80b.chunk.css",
+    "static/js/3.f7b866a1.chunk.js": "/fennyflop/pythagoras-react/static/js/3.f7b866a1.chunk.js",
+    "static/js/3.f7b866a1.chunk.js.map": "/fennyflop/pythagoras-react/static/js/3.f7b866a1.chunk.js.map",
+    "static/js/4.517ee33d.chunk.js": "/fennyflop/pythagoras-react/static/js/4.517ee33d.chunk.js",
+    "static/js/4.517ee33d.chunk.js.map": "/fennyflop/pythagoras-react/static/js/4.517ee33d.chunk.js.map",
+    "index.html": "/fennyflop/pythagoras-react/index.html",
+    "static/css/3.47a2f80b.chunk.css.map": "/fennyflop/pythagoras-react/static/css/3.47a2f80b.chunk.css.map",
+    "static/css/main.6cae98e8.chunk.css.map": "/fennyflop/pythagoras-react/static/css/main.6cae98e8.chunk.css.map",
+    "static/js/2.5ce113d4.chunk.js.LICENSE.txt": "/fennyflop/pythagoras-react/static/js/2.5ce113d4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bc556f27.js",
+    "static/js/2.5ce113d4.chunk.js",
+    "static/css/main.6cae98e8.chunk.css",
+    "static/js/main.ddd5ec61.chunk.js"
+  ]
+}
