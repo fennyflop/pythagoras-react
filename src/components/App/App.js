@@ -15,7 +15,7 @@ function App() {
   // const [array, setArray] = useState([]);
 
 
-  const algorithm = new Algorithm(100000);
+  const algorithm = new Algorithm(10000);
   const array = algorithm.renderArray()
 
   return (

@@ -1,4 +1,6 @@
 .card__text-404 {
     color: white;
     font-size: 30px;
+    box-sizing: border-box;
+    padding: 0 10px 10px;
 }

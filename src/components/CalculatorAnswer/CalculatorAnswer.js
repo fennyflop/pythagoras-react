@@ -43,7 +43,7 @@ function CalculatorAnswer({ x1, x2, opened, array }) {
             possibleAnswers.push(ans);
         })();
         possibleAnswers.forEach(({ k1, k2, gyp }) => {
-            if (gyp > 100000) {
+            if (gyp > array.length) {
                 setAnswer(false);
             } else {
                 const triangle = array.find((e) => {
@@ -59,7 +59,7 @@ function CalculatorAnswer({ x1, x2, opened, array }) {
     return (
         <div className={`calculator__answer ${opened ? '' : 'calculator__answer-hidden'}`}>
             <Card counter={'№'} p={'P'} q={"Q"} k1={'K1'} k2={'K2'} gyp={'GYP'} viewable={false} />
-            {!answer ? <NotFoundCard /> : <Card counter={answer.counter} p={answer.p} q={answer.q} k1={answer.k1} k2={answer.k2} gyp={answer.gyp} viewable={true} />}
+            {!answer ? <NotFoundCard limit={array.length} /> : <Card counter={answer.counter} p={answer.p} q={answer.q} k1={answer.k1} k2={answer.k2} gyp={answer.gyp} viewable={true} />}
         </div >
     );
 };
